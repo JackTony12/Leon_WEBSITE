@@ -1,11 +1,16 @@
 import React from "react";
 import "../styles/mainStyles.css";
-import {BsArrowDownCircle } from "react-icons/bs";
-import {AiOutlineMenu,AiOutlineDownload,AiOutlineInfoCircle} from "react-icons/ai";
+import { BsArrowDownCircle,BsWhatsapp } from "react-icons/bs";
+import { BiLogoGmail } from "react-icons/bi";
+import {
+  AiOutlineMenu,
+  AiOutlineDownload,
+  AiOutlineInfoCircle,
+} from "react-icons/ai";
 import main_logo from "../images/mainLogo.png";
 import AL_Background from "../images/posterTerminadoWebp.webp";
 import { Iconos } from "../components/iconos";
-import cv from "../Cv/CV_example.pdf";
+import cv from "../Cv/ANTONYLEONCV.pdf";
 export function MainComponent() {
   return (
     <body className="main-body">
@@ -27,7 +32,7 @@ export function MainComponent() {
             <a href="#">Blender</a>
           </li>
           <li>
-            <a href="#">Contactame</a>
+            <a href="#footer">Contactame</a>
           </li>
         </div>
         <div>
@@ -49,6 +54,14 @@ export function MainComponent() {
           </a>
         </div>
       </section>
+      <section>
+        <div className="skill-text-contenedor">
+          <h2>Habilidades</h2>
+          <p>
+            Toque el simbolo <AiOutlineInfoCircle /> para mas información
+          </p>
+        </div>
+      </section>
       <section className="main-article">
         <section id="section-skills" className="section-skills">
           <div className="contenedor-skills">
@@ -58,7 +71,26 @@ export function MainComponent() {
 
         <div className=""></div>
       </section>
-      <footer className="main-footer">footer</footer>
+      <footer id="footer" className="main-footer">
+        <div className="footer-contenedor"></div>
+        <div className="footer-text-contenedor">
+          <h2>Área de contacto</h2>
+          <p>
+            Puedes contactarme por medio de la sigientes redes sociales, sera un gusto contestarte y darte cualquier tipo de información que necesites.
+          </p>
+        </div>
+        <div className="contacto-contenedor">
+
+          <div className="whatsapp-contacto">
+            <a href="https://wa.me/qr/K33U6CF54FSUM1" target="_blank"><BsWhatsapp className="whatsapp-icon"/> WhatsApp </a>
+          </div>
+
+          <div>
+            
+          </div>
+
+        </div>
+      </footer>
     </body>
   );
 }
