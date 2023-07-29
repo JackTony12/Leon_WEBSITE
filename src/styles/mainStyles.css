@@ -73,7 +73,7 @@ justify-content: center;
   width: 40px;
 }
 .flecha-bajar{
-  font-size:2em;
+  font-size:3vw;
   border-radius: 10px;
   transition:0.3s ease-in-out;
   animation:alternate infinite flecha 1s ease;
@@ -198,6 +198,7 @@ transition: .4s ;
   transform: rotateY(180deg);
   backface-visibility: hidden; 
   z-index: 1000;
+  border-radius:5px;
 }
 .icon-flipped{
   backface-visibility: visible; 
@@ -208,17 +209,18 @@ transition: .4s ;
   transform: rotateY(180deg);
 }
 /* ANIMACION 3D DE LAS TARJETAS===================== */
-
+.skill-text-contenedor{
+  padding-left: 4vw;
+}
 .skill-text-contenedor p{
   color:white;
   font-size: 2vw;
-  padding-left: 5vw;
   font-weight: 200;
 }
 .skill-text-contenedor h2{
   color:white;
   font-weight: 300;
-  padding-left:5vw;
+  font-size:3vw;
 }
 .main-footer{
   color:white;
@@ -232,26 +234,82 @@ transition: .4s ;
   display: flex;
 
 }
-.whatsapp-contacto{
-  color:white;
-  border-radius:15px;
-}
-.whatsapp-contacto a{
+.contacto-contenedor a{ 
   text-decoration: none;
   color:white;
   background-color: #292931;
   padding:10px 20px;
   border-radius:5px;
   transition: .3s;
+  margin-right:10px;
+
 }
-.whatsapp-contacto a:hover {
+.whatsapp-contacto{
+  color:white;
+}
+
+.contacto-contenedor a:hover {
 background-color: #393944;
 }
 .whatsapp-icon{
   color:rgb(0, 196, 0);
+  margin-right:5px;
 }
+.telegram-icon{
+  color:rgb(0, 140, 255);
+  margin-right: 5px;
+}
+.logo-section{
+  position: relative;
+}
+.contenedor-logo-section img{
+  width: 100%;
+  height: auto;
+}
+.logo-section-button-contenedor{
+  position: absolute;
+  bottom:17vw;
+  left: 37vw;
+  font-size:1.5vw;
+}
+.logo-section-button-contenedor a{
+  text-decoration:none;
+  color:#19191d;
+  padding:5px 2vw;
+  font-weight:400;
+  transition:.4s;
+  border:#292931 1px solid;
+}
+.logo-section-button-contenedor a:hover{
+  background-color: #393944;
+  color: white;
+}
+.video-section{
+  position:relative;
+}
+.video-contenedor video{
+  width: 100%;
 
-
+}
+.video-section-text-slogan{
+  color:white;
+  position:absolute;
+  top:6vw;
+  left:3vw;
+  font-size: 3vw;
+  font-weight: 400;
+}
+.ul-text-list{
+  color:white;
+  position:absolute;
+  left: 5vw;
+  bottom:5vw;
+  font-size: 1.5vw;
+  padding:2vw;
+  border:1px solid #59596b;
+  border-radius:5px;
+  list-style: none;
+}
 
 /* MOVILE SMALL ========================================================*/
 @media (max-width:480px){
@@ -263,7 +321,7 @@ background-color: #393944;
 /* TABLETS====================================================== */
 /* MAS DE 700 ACTIVA ESTO */
 @media(min-width:700px){
-  .whatsapp-contacto a{
+  .contacto-contenedor a{
     font-size: 1.5vw;
   }
   .icon-back{
@@ -287,7 +345,7 @@ background-color: #393944;
   .contenedor-logo img {
     width: 200px;
   }
-.whatsapp-contacto a{
+.contacto-contenedor a{
   font-size: 2vw;
   
 }
@@ -295,7 +353,7 @@ background-color: #393944;
 /* COMPUTADORAS========================================================== */
 /* MAS DE 1100 ACTIVA ESTO */
 @media(min-width:1000px){
-  .whatsapp-contacto a{
+  .contacto-contenedor a{
     font-size: 1vw;
   }
   .icon-back{
@@ -305,7 +363,7 @@ background-color: #393944;
 }
 /* COMPUTADORAS MAS GRANDES */
 @media(min-width:1200px){
-  .whatsapp-contacto a{
+  .contacto-contenedor a{
     font-size: 1vw;
   }
   .icon-back{

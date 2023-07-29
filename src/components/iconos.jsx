@@ -13,6 +13,9 @@ import office from "../icons/office.webp";
 import reactIcon from "../icons/react.webp";
 import sass from "../icons/sass.webp";
 import three from "../icons/three.webp";
+import pothoshop from "../icons/pothoshop.webp";
+import sketchup from "../icons/sketchup.webp";
+import filmora from "../icons/filmora.webp";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
 export function Iconos() {
@@ -30,6 +33,9 @@ export function Iconos() {
     reactIcon,
     sass,
     three,
+    pothoshop,
+    sketchup,
+    filmora
   ];
   const names = [
     "Blender",
@@ -45,6 +51,9 @@ export function Iconos() {
     "React",
     "Sass",
     "Three.js",
+    "Pothoshop",
+    "Sketchup",
+    "Filmora"
   ];
   const urls = [
     "https://www.blender.org/",
@@ -60,6 +69,9 @@ export function Iconos() {
     "https://es.react.dev/",
     "https://sass-lang.com/",
     "https://threejs.org/",
+    "https://www.adobe.com/es/products/photoshop.html",
+    "https://www.sketchup.com/es",
+    "https://filmora.wondershare.net/"
   ];
   const desc = [
     "Programa de modelado 3D profesional utilizado para la creación de animaciones, efectos visuales y diseño 3D.",
@@ -74,7 +86,11 @@ export function Iconos() {
     "Paquete de software que incluye herramientas como Word, Excel, PowerPoint y más, para tareas de oficina y productividad.",
     "Librería de interfaces de usuario que facilita la creación de componentes reutilizables y eficientes para aplicaciones web.",
     "Preprocesador de estilos CSS que ofrece características adicionales y facilita la escritura de estilos más organizados.",
-    "Librería que permite el procesamiento de modelos 3D en la web, efectos visuales impresionantes y experiencias increibles."
+    "Librería que permite el procesamiento de modelos 3D en la web, efectos visuales impresionantes y experiencias increibles.",
+    "Programa para la edicion de fotografia, graficos e ilustraciones",
+    "Software de diseño que te permite crear modelos 3D",
+    "Herramienta para la edición de video de alta calidad"
+
   ];
   const [flipChek, setFlipChek] = useState(null);
   function handleFlip(index) {
