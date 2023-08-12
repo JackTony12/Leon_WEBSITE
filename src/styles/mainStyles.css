@@ -268,17 +268,17 @@ background-color: #393944;
 }
 .logo-section-button-contenedor{
   position: absolute;
-  bottom:17vw;
-  left: 37vw;
+  bottom:10vw;
+  left: 15vw;
   font-size:1.5vw;
 }
 .logo-section-button-contenedor a{
   text-decoration:none;
-  color:#19191d;
-  padding:5px 2vw;
+  color:#424242;
+  padding:4px 3vw;
   font-weight:400;
   transition:.4s;
-  border:#292931 1px solid;
+  border:#7e7e7e 1px solid;
 }
 .logo-section-button-contenedor a:hover{
   background-color: #393944;
@@ -288,14 +288,13 @@ background-color: #393944;
   position:relative;
 }
 .video-contenedor video{
-  width: 100%;
-
+  width: 100% ;
 }
 .video-section-text-slogan{
   color:white;
   position:absolute;
   top:6vw;
-  left:3vw;
+  left:5vw;
   font-size: 3vw;
   font-weight: 400;
 }
@@ -304,32 +303,49 @@ background-color: #393944;
   position:absolute;
   left: 5vw;
   bottom:5vw;
-  font-size: 1.5vw;
+  font-size: 1.9vw;
   padding:2vw;
   border:1px solid #59596b;
   border-radius:5px;
   list-style: none;
 }
+.logo-section-right-arrow{
+  color:#585858;
+  position:relative;
+  top:.2vw;
+  left: .3vw;
+  transition: .4s;
+}
+.logo-section-button-contenedor:hover .logo-section-right-arrow{
+  color:white;
+  transform: translateX(1.3vw);
+}
+/* 3D SECCION============================== */
+.modelos-3d-page-boton a{
+text-decoration:none;
+padding:.2vw 2vw;
+border:1px solid gray;
+color:#292931;
+font-size:3vw;
+border-radius:3px;
+transition: .4s;
+}
+.modelos-3d-page-boton a:hover{
+  background-color: #393944;
+  color:white;
 
+}
 /* MOVILE SMALL ========================================================*/
 @media (max-width:480px){
   .whatsapp-contacto a{
     font-size: 4vw;
-    
   }
+.modelos-3d-page-boton a{
+  font-size: 3vw;
 }
-/* TABLETS====================================================== */
-/* MAS DE 700 ACTIVA ESTO */
-@media(min-width:700px){
-  .contacto-contenedor a{
-    font-size: 1.5vw;
-  }
-  .icon-back{
-    font-size: 1.5vw;
-  }
   
 }
-/* MOBILE ============================================================*/
+/* TABLETS====================================================== */
 /* MENOS DE 780 ACTIVA ESTO */
 @media (max-width:780px){
   .main-header, .main-nav{
@@ -349,7 +365,25 @@ background-color: #393944;
   font-size: 2vw;
   
 }
+.modelos-3d-page-boton a{
+  font-size: 2vw;
 }
+}
+/* MAS DE 700 ACTIVA ESTO */
+@media(min-width:700px){
+  .contacto-contenedor a{
+    font-size: 1.5vw;
+  }
+  .icon-back{
+    font-size: 1.5vw;
+  }
+  .modelos-3d-page-boton a{
+    font-size: 1.6vw;
+  }
+  
+}
+/* MOBILE ============================================================*/
+
 /* COMPUTADORAS========================================================== */
 /* MAS DE 1100 ACTIVA ESTO */
 @media(min-width:1000px){
@@ -359,7 +393,9 @@ background-color: #393944;
   .icon-back{
     font-size: 1.5vw;
   }
-
+  .modelos-3d-page-boton a{
+    font-size: 1vw;
+  }
 }
 /* COMPUTADORAS MAS GRANDES */
 @media(min-width:1200px){

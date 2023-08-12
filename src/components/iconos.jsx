@@ -18,7 +18,8 @@ import sketchup from "../icons/sketchup.webp";
 import filmora from "../icons/filmora.webp";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
-export function Iconos() {
+ const Iconos = (()=>{
+  console.log('renderizado')
   const icons = [
     blender,
     bootstrap,
@@ -119,4 +120,6 @@ export function Iconos() {
       })}
     </>
   );
-}
+
+});
+export default Iconos;
