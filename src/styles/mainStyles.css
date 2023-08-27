@@ -96,33 +96,21 @@ justify-content: center;
 }
 .boton-cv{
 font-size: 2vw;
-font-weight: 100;
+font-weight: 400;
 position:absolute;
-color:rgb(138, 138, 138);
+color:rgb(209, 209, 209);
 text-decoration: none;
 border:1px solid rgb(49, 0, 0);
-border-radius:3px;
 padding:3px 16px;
 bottom:10%;
 left:20%;
 transition:0.5s ease;
-animation: boton_cv 1s infinite alternate ease-in;
+background:rgb(153, 0, 0);
 
 }
-@keyframes boton_cv{
-  from{
-    border-color:rgb(255, 44, 44); 
-    
-  }
-  to{
-    border:1px solid rgb(49, 0, 0);
-    
-  }
-}
+
 .boton-cv:hover{
-  animation-play-state: paused;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 1px 1px 4px rgb(175, 2, 2);
+  background-color: rgb(216, 0, 0);
   color:rgb(255, 255, 255);
 
 }
@@ -137,7 +125,7 @@ animation: boton_cv 1s infinite alternate ease-in;
 }
 .icon-skill{
   position: relative;
-  border:2px solid rgb(134, 134, 134);
+  border:1px solid rgb(49, 49, 49);
   border-radius:5px;
   height: 15vw;
   background:#19191d;
@@ -148,28 +136,30 @@ animation: boton_cv 1s infinite alternate ease-in;
   transition:.5s;
   cursor: pointer;
   perspective: 1000px;
+  overflow: hidden;
 }
 .icon-skill:hover{
   background:#101013;
-
 }
 .icon-skill::after{
   content:attr(data-text);
   font-family:'Poppins',sans-serif;
   font-weight: 200;
-  font-size: 1em;
+  font-size: 1rem;
   text-align: center;
   color:white;
   width: 100%;
-  height: 20px;
-  background-color: rgba(61, 61, 61, 0.575);
-  bottom:0;
+  height: 30px;
+  background-color: rgba(3, 3, 3, 0.575);
+  bottom:-30px;
   position:absolute;
   opacity: 0;
   transition: .5s ease-out;
 }
 .icon-skill:hover::after{
 opacity: 1;
+bottom:0px;
+
 }
 .icon-skill img{
   object-fit: cover;
@@ -406,4 +396,21 @@ transition: .4s;
     font-size: 1.2vw;
   }
 
+}
+
+/* Transicion de personalInfo */
+.cv-back-container {
+  position: relative;
+}
+
+
+
+.cv-back-component {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  width: 100%;
+}
+
+.cv-back-component.active {
+  opacity: 1;
 }

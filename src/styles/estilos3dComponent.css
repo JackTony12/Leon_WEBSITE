@@ -1,68 +1,31 @@
-.three.container canvas{
-background-color: red;
-}
-.modelo-card {
-    width: 240px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    color:white;
-  }
-  
-  .canvas-container {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    position: relative;
-  }
-  .canvas-container canvas{
-    border-radius:5px;
-  }
- .modelos-3d{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
- }   
-
- .section-three-escena{
+.section-three-escena {
   background-color: #e3e3e3;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
 }
- .three-container {
-  width: 50%;
 
- }
-  
- 
- .section-three-escena-texto{
-  color:gray;
-  padding:3vw;
-  display:grid;
+.section-three-escena-texto {
+  color: gray;
+  padding: 3vw;
+  display: grid;
   place-content: center;
- }
- .section-three-escena-texto h1{
+}
+.section-three-escena-texto h1 {
   font-size: 3vw;
   font-weight: 400;
-
- }
- .section-three-escena-texto p{
+}
+.section-three-escena-texto p {
   font-size: 1.5vw;
-  margin-bottom:2vw;
+  margin-bottom: 2vw;
+}
 
- }
-
-
-
-
- @media (max-width:650px){
-  .section-three-escena-texto h1{
+@media (max-width: 650px) {
+  .section-three-escena-texto h1 {
     font-size: 5vw;
   }
-  .section-three-escena-texto p{
+  .section-three-escena-texto p {
     font-size: 3vw;
   }
-
- }
+}

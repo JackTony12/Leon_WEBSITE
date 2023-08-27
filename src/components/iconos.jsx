@@ -18,8 +18,8 @@ import sketchup from "../icons/sketchup.webp";
 import filmora from "../icons/filmora.webp";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 
- const Iconos = (()=>{
-  console.log('renderizado')
+const Iconos = () => {
+  console.log("renderizado");
   const icons = [
     blender,
     bootstrap,
@@ -36,7 +36,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
     three,
     pothoshop,
     sketchup,
-    filmora
+    filmora,
   ];
   const names = [
     "Blender",
@@ -54,7 +54,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
     "Three.js",
     "Pothoshop",
     "Sketchup",
-    "Filmora"
+    "Filmora",
   ];
   const urls = [
     "https://www.blender.org/",
@@ -72,7 +72,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
     "https://threejs.org/",
     "https://www.adobe.com/es/products/photoshop.html",
     "https://www.sketchup.com/es",
-    "https://filmora.wondershare.net/"
+    "https://filmora.wondershare.net/",
   ];
   const desc = [
     "Programa de modelado 3D profesional utilizado para la creación de animaciones, efectos visuales y diseño 3D.",
@@ -90,8 +90,7 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
     "Librería que permite el procesamiento de modelos 3D en la web, efectos visuales impresionantes y experiencias increibles.",
     "Programa para la edicion de fotografia, graficos e ilustraciones",
     "Software de diseño que te permite crear modelos 3D",
-    "Herramienta para la edición de video de alta calidad"
-
+    "Herramienta para la edición de video de alta calidad",
   ];
   const [flipChek, setFlipChek] = useState(null);
   function handleFlip(index) {
@@ -120,6 +119,5 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
       })}
     </>
   );
-
-});
+};
 export default Iconos;

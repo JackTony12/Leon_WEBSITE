@@ -1,11 +1,11 @@
-import React from 'react'
-import {AiOutlineInfoCircle} from 'react-icons/ai'
-import {BsArrowDownCircle} from 'react-icons/bs'
+import React from "react";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import { BsArrowDownCircle } from "react-icons/bs";
 
 const SkillComponent = () => {
   return (
     <>
-     <section>
+      <section style={{ position: "relative" }}>
         <div className="contenedor-flecha-bajar">
           <a href="#section-skills">
             <BsArrowDownCircle className="flecha-bajar" />
@@ -21,7 +21,7 @@ const SkillComponent = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default SkillComponent
+export default SkillComponent;
