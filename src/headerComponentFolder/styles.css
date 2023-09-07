@@ -1,0 +1,47 @@
+.main-header{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .contenedor-logo img {
+    object-fit: cover;
+    width: 100px;
+    cursor: pointer;
+  }
+  .main-nav{
+    color:white;
+    display: flex;
+    align-items: flex-start;
+  }
+  .Btn{
+    text-decoration: none;
+    position:relative;
+    color:rgb(228, 228, 228);
+    font-weight: 300;
+    padding:5px 10px;
+    margin:.5vw ;
+    background-color: #000000;
+    border:1px solid rgb(41, 41, 41);
+    transition:.5s;
+    &:hover{
+      background-color: rgb(94, 16, 20);
+      transform: translateY(5px);
+
+    }
+  
+
+  }
+
+  @media (width  <= 700px){
+
+    .main-header, .main-nav{
+      flex-direction: column;
+    }
+    .main-nav a {
+      width: 100%;
+      text-align: center;
+      font-size: 2vw;
+    }
+
+  }
+  

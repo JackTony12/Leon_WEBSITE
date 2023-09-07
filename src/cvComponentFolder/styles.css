@@ -1,0 +1,38 @@
+.contenedor-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .section-img {
+    position: relative;
+  }
+  .boton-cv {
+    font-size: 2vw;
+    font-weight: 400;
+    position: absolute;
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+    padding: 3px 16px;
+    bottom: 10%;
+    left: 20%;
+    transition: 0.5s ease;
+    background: rgba(131, 0, 0, 0.411);
+  }
+  .boton-cv:hover {
+    background-color: rgb(216, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .cv-back-container {
+    position: relative;
+  }
+  
+  .cv-back-component {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100%;
+  }
+  
+  .cv-back-component.active {
+    opacity: 1;
+  }
+  

@@ -1,0 +1,61 @@
+.section-skills {
+  padding: 20px;
+}
+.contenedor-skills {
+  width: 100%;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.icon-skill {
+  position: relative;
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 5px;
+  height: 15vw;
+  background: #19191d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.icon-skill:hover {
+  background: #101013;
+}
+.icon-skill::after {
+  content: attr(data-text);
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(3, 3, 3, 0.575);
+  bottom: -30px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease-out;
+}
+.icon-skill:hover::after {
+  opacity: 1;
+  bottom: 0px;
+}
+.icon-skill img {
+  object-fit: cover;
+  width: 9vw;
+}
+.info-skill {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: rgb(165, 165, 165);
+  transition: 0.4s;
+}
+.info-skill:hover {
+  color: rgb(255, 153, 0);
+  transform: scale(1.1);
+}

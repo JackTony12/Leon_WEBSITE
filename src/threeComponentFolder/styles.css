@@ -1,0 +1,51 @@
+.section-three-escena {
+  background-color: #e3e3e3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+}
+
+.section-three-escena-texto {
+  color: gray;
+  padding: 2vw;
+  display: grid;
+  place-content: center;
+}
+.section-three-escena-texto h1 {
+  font-size: 3vw;
+  font-weight: 400;
+  margin-top: 4vw;
+}
+.section-three-escena-texto p {
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+
+.modelos-3d-page-boton a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  padding: 0.5vw 2vw;
+  border: 1px solid rgb(190, 190, 190);
+  color: #797979;
+  transition: 0.4s;
+}
+.modelos-3d-page-boton a:hover {
+  background-color: #393944;
+  color: white;
+}
+
+@media (width <= 650px) {
+  .section-three-escena-texto {
+    & h1 {
+      font-size: 4vw;
+    }
+    & p {
+      font-size: 2vw;
+    }
+
+    & a {
+      font-size: 3vw;
+    }
+  }
+}

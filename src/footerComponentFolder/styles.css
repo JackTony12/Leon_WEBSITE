@@ -1,0 +1,84 @@
+.main-footer {
+    position: relative;
+    color: white;
+    padding: 20px;
+    background-color: #19191d;
+  }
+  .footer-text-contenedor {
+    margin-bottom: 20px;
+  }
+  .copyright-modal {
+    font-size: 1.5vw;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: #19191d;
+    color: #a0a0a0;
+    border-radius: 2vw;
+    border: 2px solid white;
+    padding: 1vw;
+    width: 80%;
+    margin: 2vw;
+  }
+  .close-copyright {
+    background-color: #101013;
+    font-size: 1.4vw;
+    border: none;
+    color: white;
+    padding: 0.6vw 3vw;
+    cursor: pointer;
+    margin-left: 2vw;
+    border: 1px solid rgb(31, 31, 31);
+    &:hover {
+      background-color: white;
+      color: #101013;
+    }
+  }
+  .contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+  
+    > div {
+      display: flex;
+    }
+    & a {
+      text-decoration: none;
+      color: white;
+      background-color: #292931;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: 0.3s;
+      margin-right: 10px;
+    }
+    .copyright {
+      border: none;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  
+  .whatsapp-contacto {
+    color: white;
+  }
+  
+  .contacto-contenedor a:hover {
+    background-color: #393944;
+  }
+  .whatsapp-icon {
+    color: rgb(0, 196, 0);
+    margin-right: 5px;
+  }
+  .telegram-icon {
+    color: rgb(0, 140, 255);
+    margin-right: 5px;
+  }
+
+  @media (width >= 1200px) {
+    .copyright-modal{
+      font-size: 1vw;
+    }
+    .close-copyright{
+      font-size: 1vw;
+    }
+  }

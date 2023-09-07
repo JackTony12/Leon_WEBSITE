@@ -1,0 +1,42 @@
+.skill-text-contenedor {
+  padding-left: 4vw;
+}
+.skill-text-contenedor p {
+  color: white;
+  font-size: 2vw;
+  font-weight: 200;
+}
+.skill-text-contenedor h2 {
+  color: white;
+  font-weight: 300;
+  font-size: 3vw;
+}
+.contenedor-flecha-bajar {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-flecha-bajar a {
+  right: 10%;
+  text-align: center;
+  color: white;
+  width: 40px;
+}
+.flecha-bajar {
+  font-size: 3vw;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  animation: alternate infinite flecha 1s ease;
+}
+.flecha-bajar:hover {
+  color: red;
+  animation-play-state: paused;
+}
+@keyframes flecha {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

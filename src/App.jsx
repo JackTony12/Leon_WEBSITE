@@ -1,4 +1,4 @@
-import {MainComponent} from './components/mainComponent'
+import {MainComponent} from './mainComponent/mainComponent'
 import {MyContextFunction} from "./contexts/mainContext"
 function App() {
 
