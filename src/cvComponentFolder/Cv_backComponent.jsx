@@ -6,6 +6,7 @@ import cv from "../assets/Cv/ANTONYLEONCV.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import PersonalInfo from "../personalComponentFolder/personalInfo";
 import './styles.css'
+import '../styles/mainStyles.css'
 
 const CvBackComponent = () => {
   const { interruptor } = useContext(MyContext);
@@ -20,7 +21,7 @@ const CvBackComponent = () => {
             <img src={AL_Background} alt="AntonyLeon" />
           </div>
           <a download="AntonyLeonCV.pfd" className="boton-cv" href={cv}>
-            Descargar CV <AiOutlineDownload />
+            Descargar CV < AiOutlineDownload className="downloadIcon"/>
           </a>
         </section>
       </div>

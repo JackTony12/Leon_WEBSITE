@@ -1,19 +1,17 @@
 .section-skills {
-  padding: 20px;
+  padding: 3vw;
 }
 .contenedor-skills {
   width: 100%;
   gap: 5px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .icon-skill {
   position: relative;
-  border: 1px solid rgb(49, 49, 49);
   border-radius: 5px;
   height: 15vw;
-  background: #19191d;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -21,20 +19,23 @@
   transition: 0.5s;
   perspective: 1000px;
   overflow: hidden;
+  &:hover {
+    background: #1d1d1da4;
+  }
 }
-.icon-skill:hover {
-  background: #101013;
+.icon-skill:hover::before {
+  filter: blur(2px);
 }
 .icon-skill::after {
   content: attr(data-text);
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 3vw;
   text-align: center;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   color: white;
   width: 100%;
   height: 30px;
-  background-color: rgba(3, 3, 3, 0.575);
   bottom: -30px;
   position: absolute;
   opacity: 0;
@@ -42,20 +43,34 @@
 }
 .icon-skill:hover::after {
   opacity: 1;
-  bottom: 0px;
+  bottom: 30%;
 }
 .icon-skill img {
   object-fit: cover;
   width: 9vw;
+  filter: drop-shadow(5px 5px 2px rgb(0, 0, 0));
+}
+.icon-skill:hover .icon {
+  filter: blur(1px);
 }
 .info-skill {
   position: absolute;
   top: 5%;
   right: 5%;
-  color: rgb(165, 165, 165);
+  color: rgb(36, 36, 36);
   transition: 0.4s;
+  &:hover {
+    color: rgb(255, 153, 0);
+    transform: scale(1.1);
+  }
 }
-.info-skill:hover {
-  color: rgb(255, 153, 0);
-  transform: scale(1.1);
+@media (width < 380px) {
+  .contenedor-skills {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+@media (width > 1000px) {
+  .icon-skill::after {
+    font-size: 2vw;
+  }
 }

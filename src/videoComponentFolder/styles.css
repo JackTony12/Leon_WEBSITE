@@ -1,25 +1,37 @@
 .video-section {
-    position: relative;
-  }
-  .video-contenedor video {
-    width: 100%;
+  position: relative;
+}
+.video-contenedor video {
+  width: 100%;
+}
+.video-section-text-slogan {
+  color: white;
+  position: absolute;
+  top: 4vw;
+  left: 5vw;
+  font-size: 3.4vw;
+  font-weight: 400;
+  width: 90%;
+}
+.ul-text-list {
+  color: white;
+  position: absolute;
+  left: 5vw;
+  bottom: 4vw;
+  font-size: 1.9vw;
+  padding: 2vw;
+  border: 1px solid #59596b;
+  border-radius: 5px;
+  list-style: none;
+  width: auto;
+  height: auto;
+}
+
+@media (width < 560px) {
+  .ul-text-list {
+    font-size: 3vw;
   }
   .video-section-text-slogan {
-    color: white;
-    position: absolute;
-    top: 6vw;
-    left: 5vw;
-    font-size: 3vw;
-    font-weight: 400;
+    font-size: 4vw;
   }
-  .ul-text-list {
-    color: white;
-    position: absolute;
-    left: 5vw;
-    bottom: 5vw;
-    font-size: 1.9vw;
-    padding: 2vw;
-    border: 1px solid #59596b;
-    border-radius: 5px;
-    list-style: none;
-  }
+}

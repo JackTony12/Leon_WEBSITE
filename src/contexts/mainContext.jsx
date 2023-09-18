@@ -4,7 +4,7 @@ const MyContext = createContext();
 
 const MyContextFunction = ({children}) => {
     const [interruptor, setInterruptor] = useState(false);
-    
+    console.log('rendered')
 
   return (
     <MyContext.Provider value={{

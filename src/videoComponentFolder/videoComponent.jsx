@@ -11,6 +11,8 @@ const VideoComponent = () => {
         <h2 className="video-section-text-slogan">
           Transformando ideas en experiencias digitales
         </h2>
+        <div className="ul-text-list-contenedor">
+
         <ul className="ul-text-list">
           <li>
             <BsCheck /> Soluciones confiables
@@ -25,6 +27,7 @@ const VideoComponent = () => {
             <BsCheck /> Diseño responsive amigable
           </li>
         </ul>
+        </div>
       </div>
     </section>
   );

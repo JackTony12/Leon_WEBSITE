@@ -63,6 +63,7 @@ const FormContact = () => {
             name="mensaje"
             onChange={handleChange}
             required
+            placeholder="¿Hola, podemos hablar?"
           ></textarea>
         </div>
         <button className="form-submit-btn" type="submit">

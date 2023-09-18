@@ -8,12 +8,13 @@ const ThreeComponent = () => {
         <div>
           <h1>Diseño y modelado 3D</h1>
           <p>
-            Echa un vistazo a estos modelos basicos hechos en blender e
-            importados con three.js
+          Echa un vistazo a estos modelos hechos en Blender e importados con Three.js.
           </p>
         </div>
         <div className="modelos-3d-page-boton">
-          <a target="_blank" href="https://jacktony12.github.io/3d_AntonyLeon/">Ver modelos 3D</a>
+          <a target="_blank" href="https://jacktony12.github.io/3d_AntonyLeon/">
+            Ver modelos 3D
+          </a>
         </div>
       </div>
       <Carousel />
