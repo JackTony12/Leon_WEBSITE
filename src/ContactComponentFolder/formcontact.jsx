@@ -59,6 +59,7 @@ const FormContact = () => {
         <div className="form-group">
           <label htmlFor="textarea">Mensaje</label>
           <textarea
+            className="textArea"
             value={userData.mensaje}
             name="mensaje"
             onChange={handleChange}

@@ -94,11 +94,29 @@
   outline: none;
   border-color: #e81cff;
 }
-
 .form-container .form-group textarea:focus {
   outline: none;
   border-color: #e81cff;
 }
+/* scroll personalizacion ================================= */
+.textArea::-webkit-scrollbar:vertical {
+  width:5px;
+}
+.textArea::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+.textArea::-webkit-scrollbar{
+-webkit-appearance: none;
+}
+.textArea::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+}
+.textArea::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+/* scroll personalizacion ================================= */
+
 
 .form-container .form-submit-btn {
   display: flex;

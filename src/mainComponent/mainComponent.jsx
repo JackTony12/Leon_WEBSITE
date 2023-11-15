@@ -1,11 +1,11 @@
-import React from "react";
-import "../styles/mainStyles.css";
-import Header from "../headerComponentFolder/header";
-import CvBackComponent from "../cvComponentFolder/Cv_backComponent";
-import SkilsTarjetasComponent from "../skillComponentFolder/skilsComponent";
-import FooterComponent from "../footerComponentFolder/footerComponent";
-import VideoComponent from "../videoComponentFolder/videoComponent";
-import ThreeComponent from "../threeComponentFolder/threeComponent";
+import React from "react"
+import "../styles/mainStyles.css"
+import Header from "../headerComponentFolder/header"
+import CvBackComponent from "../cvComponentFolder/Cv_backComponent"
+import SkilsTarjetasComponent from "../skillComponentFolder/skilsComponent"
+import FooterComponent from "../footerComponentFolder/footerComponent"
+import VideoComponent from "../videoComponentFolder/videoComponent"
+import ThreeComponent from "../threeComponentFolder/threeComponent"
 
 export function MainComponent() {
   return (
@@ -17,5 +17,5 @@ export function MainComponent() {
       <ThreeComponent />
       <FooterComponent />
     </div>
-  );
+  )
 }

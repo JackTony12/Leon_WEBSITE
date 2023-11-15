@@ -18,7 +18,7 @@
 }
 
 .personal-info-text {
-  background-color: brown;
+  background-color: rgb(0, 0, 0);
   padding: 3vw;
   color: white;
   transition: 0.5s ease-in-out;
@@ -27,11 +27,10 @@
   }
   & h2 {
     font-size: 5vw;
-
   }
   & h4 {
     padding: 1vw;
-    background-color: #da3737;
+    background-color: #141414;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 1vw;
     font-size: 2vw;
@@ -42,13 +41,13 @@
   margin-top: 2vw;
   border: 1px solid #ccc;
   padding: 1vw 1.5vw;
-  background-color: #f5f5f5;
+  background-color: #1a1a1a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: rgb(29, 29, 29);
+  color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
 
   & p {
-    font-size: 2vw;
+    font-size: 1.4vw;
   }
   & h2 {
     margin-bottom: 1vw;
@@ -71,7 +70,7 @@
     border-radius: 2vw 0 0 2vw;
     border: white 1px solid;
     text-decoration: none;
-    background-color: #da3737;
+    background-color: #000000;
   }
 
   .btn-cerrar {
@@ -79,7 +78,7 @@
     color: white;
     border: white 1px solid;
     text-decoration: none;
-    background-color: #da3737;
+    background-color: #000000;
     padding: 1vw 2vw;
     border-radius: 0 2vw 2vw 0;
   }
@@ -90,6 +89,12 @@
   transition: 0.4s;
   &:hover {
     background-color: white;
-    color: #da3737;
+    color: #000000;
+  }
+}
+
+@media (width > 900px) {
+  .personal-info-buttons {
+    font-size: 1em;
   }
 }
