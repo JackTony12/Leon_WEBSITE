@@ -53,6 +53,9 @@
     color: black;
   }
 }
+.btn-cerrar-menu {
+  display: none;
+}
 
 @media (width < 668px) {
   .main-header {
@@ -76,13 +79,16 @@
     justify-content: center;
     gap: 40px;
     flex-direction: column;
-    transition: 1s;
+    transition: 0.6s ease-out;
     background-color: #000000;
     color: white;
     border: 1px solid white;
   }
   .menu-active {
     right: 0;
+  }
+  .btn-cerrar-menu {
+    display: block;
   }
 }
 @media (width > 568px) {

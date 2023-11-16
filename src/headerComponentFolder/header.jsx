@@ -6,6 +6,14 @@ import "./styles.css"
 function Header() {
   const { setInterruptor, interruptor } = useContext(MyContext)
   const [menuSwich, setMenuSwich] = useState(false)
+  const handleMenu = () => {
+    setMenuSwich(!menuSwich)
+  }
+  if (menuSwich) {
+    document.body.style.overflow = "hidden"
+  } else {
+    document.body.style.overflow = "auto"
+  }
   return (
     <header className="main-header">
       <div className="menu-icon-contenedor">
@@ -23,6 +31,7 @@ function Header() {
               className="Btn"
               onClick={() => {
                 setInterruptor(!interruptor)
+                setMenuSwich(!menuSwich)
               }}
               href="#"
             >
@@ -55,20 +64,30 @@ function Header() {
             </a>
           </div>
           <div className="btn-contenedor">
-            <a className="Btn" href="#blender" data-text="blender">
+            <a
+              onClick={() => handleMenu()}
+              className="Btn"
+              href="#blender"
+              data-text="blender"
+            >
               Blender
             </a>
           </div>
           <div className="btn-contenedor">
-            <a className="Btn" href="#footer" data-text="Contacto">
+            <a
+              onClick={() => handleMenu()}
+              className="Btn"
+              href="#footer"
+              data-text="Contacto"
+            >
               Contacto
             </a>
           </div>
           <div className="btn-contenedor">
             <a
-              onClick={() => setMenuSwich(!menuSwich)}
+              onClick={() => handleMenu()}
               href="#"
-              className="Btn"
+              className="Btn btn-cerrar-menu"
             >
               Cerrar
             </a>
