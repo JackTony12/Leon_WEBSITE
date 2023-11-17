@@ -36,7 +36,7 @@
   left: 20%;
   transition: 0.2s ease;
   border: 1px solid #5c5c5cc0;
-  border-radius: 10px 0 10px 0;
+  border-radius: 3px;
   background-color: transparent;
   &:hover {
     border-color: rgb(0, 38, 255);
@@ -113,47 +113,50 @@
 @media (width>1080px) {
   .boton-cv {
     font-size: 1.5vw;
-    bottom: 14em;
+    bottom: 28%;
   }
   .rotatePause {
     font-size: 2em;
   }
   .experience {
-    bottom: 20%;
+    bottom: 35%;
     font-size: 1.5em;
   }
 }
 @media (width>781px) and (width < 1080px) {
   .boton-cv {
-    bottom: 14em;
+    bottom: 29%;
+  }
+  .experience {
+    bottom: 37%;
   }
 }
 @media (width>581px) and (width < 780px) {
   .boton-cv {
-    bottom: 12em;
+    bottom: 20%;
   }
   .experience {
-    bottom: 15%;
+    bottom: 30%;
     font-size: 1em;
   }
 }
-@media (width > 360px) and (width < 580px) {
+@media (width > 380px) and (width < 580px) {
   .boton-cv {
     font-size: 3vw;
-    bottom: 35%;
+    bottom: 20%;
   }
   .experience {
-    bottom: 15%;
+    bottom: 33%;
     font-size: 0.7em;
   }
 }
-@media (width < 359px) {
+@media (width < 379px) {
   .boton-cv {
-    font-size: 1vw;
-    bottom: 25%;
+    font-size: 1.5vw;
+    bottom: 15%;
   }
   .experience {
-    bottom: 5%;
+    bottom: 25%;
     font-size: 0.5em;
   }
 }

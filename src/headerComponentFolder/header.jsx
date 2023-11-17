@@ -9,7 +9,7 @@ function Header() {
   const handleMenu = () => {
     setMenuSwich(!menuSwich)
   }
-  if (menuSwich) {
+  if (window.innerWidth < 668 && menuSwich == true) {
     document.body.style.overflow = "hidden"
   } else {
     document.body.style.overflow = "auto"
