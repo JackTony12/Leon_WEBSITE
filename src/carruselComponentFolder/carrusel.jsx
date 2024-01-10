@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
-import img1 from "../assets/images/choza.webp";
-import img2 from "../assets/images/carrito.webp";
-import img3 from "../assets/images/cocina.webp";
-import "./styles.css";
+import React, { useState, useEffect } from "react"
+import img1 from "../assets/images/choza2.webp"
+import img2 from "../assets/images/carrito.webp"
+import img3 from "../assets/images/cocina.webp"
+import "./styles.css"
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 5000);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 3)
+    }, 5000)
 
     return () => {
-      clearInterval(interval);
-    };
-  }, []);
+      clearInterval(interval)
+    }
+  }, [])
 
   return (
     <div className="carousel-container">
@@ -29,7 +29,7 @@ const Carousel = () => {
         <img src={img3} alt="Imagen 2" />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel

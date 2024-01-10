@@ -10,13 +10,7 @@ import "../styles/mainStyles.css"
 
 const CvBackComponent = () => {
   const { interruptor } = useContext(MyContext)
-  const [loader, setLoader] = useState(false)
-  const handleDownload = () => {
-    setLoader(true)
-    setTimeout(() => {
-      setLoader(false)
-    }, 2000)
-  }
+
   return (
     <section className="cv-back-container">
       <div className={`cv-back-component ${interruptor ? "active" : ""}`}>
@@ -28,12 +22,7 @@ const CvBackComponent = () => {
             className="
           boton-cv-container"
           >
-            <a
-              onClick={() => handleDownload()}
-              download="AntonyLeonCV.pfd"
-              className="boton-cv"
-              href={cv}
-            >
+            <a download="AntonyLeonCV.pdf" className="boton-cv" href={cv}>
               Descargar CV <AiOutlineDownload className="downloadIcon" />
             </a>
 

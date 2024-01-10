@@ -18,8 +18,7 @@ const FooterComponent = () => {
         <div className="logoAl-contenedor">
           <div>
             <img src={logoAl} alt="" />
-            <p>Antony Leon Website</p>
-            <p>All rights reserved ©</p>
+            <p>© 2023 Antony Leon Website</p>
           </div>
         </div>
       </div>
