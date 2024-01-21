@@ -26,6 +26,11 @@
   width: auto;
   height: auto;
 }
+@media (width > 1000px) {
+  .video-section-text-slogan {
+    font-size: 3em;
+  }
+}
 
 @media (width < 560px) {
   .ul-text-list {

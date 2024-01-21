@@ -1,5 +1,5 @@
 .section-skills {
-  padding: 3vw;
+  padding: 3vw 2vw;
 }
 .contenedor-skills {
   width: 100%;
@@ -11,7 +11,6 @@
 .icon-skill {
   position: relative;
   border-radius: 5px;
-  height: 15vw;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -47,7 +46,7 @@
 }
 .icon-skill img {
   object-fit: cover;
-  width: 9vw;
+  width: 8vw;
   filter: drop-shadow(5px 5px 2px rgb(0, 0, 0));
 }
 .icon-skill:hover .icon {
@@ -68,7 +67,22 @@
   .contenedor-skills {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
+  .icon-skill {
+    height: 5em;
+  }
 }
+@media (width > 381px) {
+  .icon-skill {
+    height: 6em;
+  }
+}
+
+@media (width > 580px) {
+  .icon-skill {
+    height: 8em;
+  }
+}
+
 @media (width > 1000px) {
   .icon-skill::after {
     font-size: 2vw;

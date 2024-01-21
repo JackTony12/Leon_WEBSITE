@@ -55,7 +55,6 @@
   }
   &:hover .downloadIcon {
     animation-play-state: running;
-    color: rgb(0, 47, 255);
   }
   &:active {
     background-color: white;
@@ -83,7 +82,7 @@
   left: 20%;
   & h2 {
     font-family: "Lato", sans-serif;
-    font-size: 8vw;
+    font-size: 7vw;
   }
   & p {
     letter-spacing: 1px;
@@ -134,6 +133,19 @@
     font-size: 1.5em;
   }
 }
+@media (width > 1000px) {
+  .antony-leon {
+    & h2 {
+      font-size: 6em;
+    }
+    & p {
+      font-size: 1.5em;
+    }
+  }
+  .experience {
+    font-size: 0.8em;
+  }
+}
 @media (width>781px) and (width < 1080px) {
   .boton-cv {
     bottom: 29%;
@@ -168,6 +180,6 @@
   }
   .experience {
     bottom: 25%;
-    font-size: 0.5em;
+    font-size: 0.3em;
   }
 }
