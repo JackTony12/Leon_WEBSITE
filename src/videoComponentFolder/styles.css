@@ -1,24 +1,17 @@
 .video-section {
   position: relative;
+  padding: 3em;
+  margin: 70px 0;
 }
-.video-contenedor video {
-  width: 100%;
-}
+
 .video-section-text-slogan {
   color: white;
-  position: absolute;
-  top: 4vw;
-  left: 5vw;
-  font-size: 3.4vw;
-  font-weight: 400;
-  width: 90%;
+  font-size: clamp(1vw, 4vw, 5vw);
+  text-align: center;
+  margin: 1em 0 3em 0;
 }
 .ul-text-list {
   color: white;
-  position: absolute;
-  left: 5vw;
-  bottom: 4vw;
-  font-size: 1.9vw;
   padding: 2vw;
   border: 1px solid #59596b;
   border-radius: 5px;
@@ -28,15 +21,36 @@
 }
 @media (width > 1000px) {
   .video-section-text-slogan {
-    font-size: 3em;
+    font-size: 2em;
   }
+  .ul-text-list {
+    font-size: 1.4em;
+  }
+}
+
+.digital-experience-contenedor {
+  & img {
+    object-fit: cover;
+    width: 40vw;
+  }
+}
+
+.ul-digital-contenedor {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (width < 560px) {
   .ul-text-list {
     font-size: 3vw;
   }
-  .video-section-text-slogan {
-    font-size: 4vw;
+
+  .ul-digital-contenedor {
+    flex-direction: column-reverse;
+  }
+  .digital-experience-contenedor img {
+    width: 100%;
   }
 }

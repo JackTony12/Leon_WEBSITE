@@ -6,7 +6,7 @@ import "./styles.css"
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
-
+  const images = [img1, img2, img3]
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % 3)
@@ -18,16 +18,15 @@ const Carousel = () => {
   }, [])
 
   return (
-    <div className="carousel-container">
-      <div className={`image-wrapper ${currentIndex === 0 ? "" : "hidden"}`}>
-        <img src={img1} alt="Imagen 1" />
-      </div>
-      <div className={`image-wrapper ${currentIndex === 1 ? "" : "hidden"}`}>
-        <img src={img2} alt="Imagen 2" />
-      </div>
-      <div className={`image-wrapper ${currentIndex === 2 ? "" : "hidden"}`}>
-        <img src={img3} alt="Imagen 2" />
-      </div>
+    <div className='carousel-container'>
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`image-wrapper ${currentIndex === index ? "" : "hidden"}`}
+        >
+          <img src={image} alt={`Imagen ${index + 1}`} />
+        </div>
+      ))}
     </div>
   )
 }

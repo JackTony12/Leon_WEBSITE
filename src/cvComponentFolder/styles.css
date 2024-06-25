@@ -11,29 +11,18 @@
   width: 100%;
   position: relative;
 }
-.downloadIcon {
-  animation: downLoadIcon 1s ease-in infinite alternate;
-  transition: 0.1s;
-  animation-play-state: paused;
-}
-@keyframes downLoadIcon {
-  to {
-    transform: translateY(7px);
-  }
-}
+
 .boton-cv-container {
   position: relative;
   width: 50%;
 }
 .boton-cv {
-  position: absolute;
-  font-size: 2vw;
+  text-align: center;
+  font-size: calc(1vw + 0.5em);
   font-weight: 400;
   color: #d1d1d1;
   text-decoration: none;
   padding: 3px 16px;
-  bottom: 8em;
-  left: 20%;
   transition: 0.2s ease;
   border-radius: 3px;
   border: 1px;
@@ -53,9 +42,7 @@
     box-shadow: 0px 0px 20px rgba(126, 83, 167, 0.493);
     transform: scale(1.1);
   }
-  &:hover .downloadIcon {
-    animation-play-state: running;
-  }
+
   &:active {
     background-color: white;
     color: black;
@@ -78,10 +65,11 @@
 .antony-leon {
   position: absolute;
   color: white;
-  top: 3em;
+
+  top: calc(1em + 2em);
   left: 20%;
   & h2 {
-    font-family: "Lato", sans-serif;
+    font-family: sans-serif;
     font-size: 7vw;
   }
   & p {
@@ -91,22 +79,26 @@
 }
 .experience {
   animation: moveGradient 5s infinite linear;
-  position: absolute;
-  bottom: 30%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #d5c923, #23d5ab);
-
+  background: linear-gradient(-45deg, #ff6232, #ff2b7c, #fff12f, #27ffcc);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 300%;
   color: transparent;
-  left: 20%;
   & span {
     font-size: 3em;
     & span {
       font-size: 0.8em;
     }
   }
+}
+.capsula-ex-cv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  bottom: 10vw;
+  left: 20%;
 }
 
 @keyframes moveGradient {
@@ -120,66 +112,28 @@
     background-position: 0 50%;
   }
 }
-@media (width>1080px) {
-  .boton-cv {
-    font-size: 1.5vw;
-    bottom: 28%;
-  }
-  .rotatePause {
-    font-size: 2em;
-  }
-  .experience {
-    bottom: 35%;
-    font-size: 1.5em;
-  }
-}
+
 @media (width > 1000px) {
-  .antony-leon {
-    & h2 {
-      font-size: 6em;
-    }
-    & p {
-      font-size: 1.5em;
-    }
-  }
   .experience {
-    font-size: 0.8em;
+    font-size: calc(1vw + 0.7rem);
   }
 }
-@media (width>781px) and (width < 1080px) {
-  .boton-cv {
-    bottom: 29%;
+@media (width < 580px) {
+  .capsula-ex-cv {
+    bottom: 8vw;
+    gap: 10px;
   }
   .experience {
-    bottom: 37%;
+    font-size: calc(0.1vw + 0.5rem);
   }
 }
-@media (width>581px) and (width < 780px) {
+@media (width < 280px) {
+  .capsula-ex-cv {
+    bottom: 10vw;
+    gap: 2px;
+  }
+  .experience,
   .boton-cv {
-    bottom: 20%;
-  }
-  .experience {
-    bottom: 30%;
-    font-size: 1em;
-  }
-}
-@media (width > 380px) and (width < 580px) {
-  .boton-cv {
-    font-size: 3vw;
-    bottom: 20%;
-  }
-  .experience {
-    bottom: 33%;
-    font-size: 0.7em;
-  }
-}
-@media (width < 379px) {
-  .boton-cv {
-    font-size: 1.5vw;
-    bottom: 15%;
-  }
-  .experience {
-    bottom: 25%;
-    font-size: 0.3em;
+    font-size: calc(0.1em + 0.2rem);
   }
 }

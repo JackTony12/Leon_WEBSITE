@@ -25,26 +25,13 @@
   text-decoration: none;
   padding: 0.5vw 2vw;
   color: #eeeeee;
-  transition: 1.5s;
+  transition: 0.5s;
   background-color: #242424;
-
+  border-radius: 5px;
   &:hover {
-    color: rgb(255, 255, 255);
-    background-color: #0000008f;
+    color: rgb(0, 0, 0);
+    background-color: #fafafad7;
   }
-  &::before {
-    content: "";
-    transition: 1s;
-    width: 0%;
-    height: 10%;
-    background-color: #ffffff;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-}
-.modelos-3d-page-boton a:hover::before {
-  width: 100%;
 }
 
 @media (width > 576px) and (width < 767px) {

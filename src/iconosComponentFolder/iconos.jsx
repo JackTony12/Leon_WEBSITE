@@ -1,22 +1,22 @@
-import React from "react";
-import "./styles.css";
-import iconData from "./iconsData";
-import { AiOutlineInfoCircle } from "react-icons/ai";
+import React from "react"
+import "./styles.css"
+import iconData from "./iconsData"
 
 const Iconos = () => {
   return (
     <>
       {iconData.map((item, index) => {
+        const IconsImg = item.icon
         return (
-          <div data-text={item.name} className="icon-skill" key={index}>
-            <img src={item.icon} alt={item.name} className="icon" />
-            <a href={item.url} target="_blank" className="info-skill">
-              <AiOutlineInfoCircle />
+          <div className='icon-skill' key={index}>
+            <a href='#'>
+              <IconsImg className='icon' />
+              <span>{item.name}</span>
             </a>
           </div>
-        );
+        )
       })}
     </>
-  );
-};
-export default Iconos;
+  )
+}
+export default Iconos
